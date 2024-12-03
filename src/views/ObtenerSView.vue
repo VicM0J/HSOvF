@@ -55,7 +55,7 @@ export default {
   methods: {
     async obtenerServicios() {
       try {
-        const respuesta = await axios.get("http://localhost:3000/api/HydraulicSoltionsO/servicios");
+        const respuesta = await axios.get("https://hydraulic-solutions-optimization.onrender.com/api/HydraulicSoltionsO/servicios");
         this.servicios = respuesta.data; 
       } catch (error) {
         console.error("Error al obtener los servicios:", error);
