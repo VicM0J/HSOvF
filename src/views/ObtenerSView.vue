@@ -54,13 +54,14 @@ export default {
   },
   methods: {
     async obtenerServicios() {
-      try {
-        const respuesta = await axios.get("https://hydraulic-solutions-optimization.onrender.com/api/HydraulicSoltionsO/servicios");
-        this.servicios = respuesta.data; 
-      } catch (error) {
-        console.error("Error al obtener los servicios:", error);
-      }
-    },
+  try {
+    const respuesta = await axios.get("https://hydraulic-solutions-optimization.onrender.com/api/HydraulicSoltionsO/servicios");
+    this.servicios = respuesta.data; 
+  } catch (error) {
+    console.error("Error al obtener los servicios:", error);
+  }
+}
+,
     handleSuccess(details) {
       alert("Pago exitoso!");
       console.log(details);
